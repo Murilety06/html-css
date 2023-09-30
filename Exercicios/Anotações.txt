@@ -15,3 +15,11 @@ Repetição de imagem: (a partir do canto superior esquerdo)
 background-size: 100%  100%;	-> preenche a tela, mas achata e distorce a imagem
 		                countain;  	-> a imagem é 100% exibida, com laterais vazias as vezes
 		                cover;		-> cobre a tela toda mesmo que tenha que cortar a imagem
+		                
+#container {
+    display: flex; /*Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo*/
+    justify-content: center; /*Alinhamento horizontal, ou seja, dispensa o "margin: auto"*/
+    align-items: center; /*Alinhamento vertical*/
+}
+
+Essas propriedades sempre são colocadas no elemento-pai (container), não se esqueçam desse importante detalhe.
